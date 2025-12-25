@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digital Logic Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Digital Logic Simulator</h1>
+
+    <div class="container">
+
+        <div class="inputs">
+            <label>A:
+                <select id="a" onchange="calculate()">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                </select>
+            </label>
+
+            <label>B:
+                <select id="b" onchange="calculate()">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="gates">
+            <button onclick="setGate('AND')">AND</button>
+            <button onclick="setGate('OR')">OR</button>
+            <button onclick="setGate('XOR')">XOR</button>
+            <button onclick="setGate('NAND')">NAND</button>
+            <button onclick="setGate('NOR')">NOR</button>
+        </div>
+
+        <div class="output">
+            <p>Selected Gate: <span id="gate">AND</span></p>
+            <p>Output: <span id="out">0</span></p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f6fa;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    color: #0a3d62;
+}
+
+.container {
+    background: white;
+    width: 350px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.inputs label {
+    margin: 10px;
+    font-size: 18px;
+}
+
+select {
+    font-size: 16px;
+    padding: 4px;
+}
+
+.gates {
+    margin: 20px 0;
+}
+
+button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1e90ff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0b5ed7;
+}
+
+.output {
+    font-size: 18px;
+    margin-top: 15px;
+}
